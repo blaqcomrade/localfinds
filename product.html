@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div style="background-color: rgb(3, 165, 3);"><br>
+        <h1 style="color:rgb(159, 247, 59);text-align: center;" class="flf"><strong>LOCALFINDS</strong></h1></marquee>
+         <a href="index.html" style="margin-left: 35%; margin-bottom:3px;" class="btn btn-success">HOME</a>
+         <a href="product.html" style="margin-bottom: 3px;" class="btn btn-success">PRODUCT</a>
+         <a href="registration.html"style="margin-bottom: 3px;"  class="btn btn-success">SIGNUP</a>
+         <a href="about.html" style="margin-bottom: 3px;" class="btn btn-success">CALCULATOR</a>
+     </div><br>
+    <div>
+        <h1 class="leg" id="header">SHOES</h1>
+        <h1 id="computer">CLOTHES</h1>
+        <h1>WRIST WATCH</h1>
+        <p class="legit">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem architecto repudiandae dolorum. Sed iusto itaque maiores dolore mollitia magnam quas minima expedita explicabo quidem officiis, culpa in alias illum delectus!</p>
+    </div>
+    <img src="img/191741_1631469743 - Copy.jpg" alt="" width="20%">
+    <img src="img/960x0.jpg" alt="" width="20%">
+    <img src="img/a77acd2568409e476171e2f3d647c0146b653ea8 - Copy.jpg" alt="" width="20%">
+    <img src="img/images.jpg" alt="" width="20%">
+    <a href="index.html" >home</a><br><br>
+
+    
+    <div>
+        <input type="number" name="" id="box1" placeholder="number" required>
+        <input type="number" name="" id="box2" placeholder="number" required>
+        <input type="number" name="" id="answer" placeholder="answer" readonly>
+        <button onclick="add()">add</button>
+        <button onclick="alert('your message comes here')"></button>
+    </div>
+
+    <script>
+      
+        document.getElementById("header").innerHTML="technology"
+        document.getElementById("computer").innerHTML="computer"
+        document.getElementById("computer").style.color="greenyellow"
+        
+        
+        function addnumber(firstnumber, secondnumber){
+            return firstnumber - secondnumber
+        }
+        document.write(addnumber(30,10))
+        
+        function add(){
+            var box1=document.getElementById("box1").value
+            var box2=document.getElementById("box2").value
+            var sum=Number(box1) + Number(box2)
+            document.getElementById("answer").value=sum
+        }
+        
+    </script>
+
+</body>
+</html>
